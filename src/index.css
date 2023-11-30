@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(/public/images/images.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 40%;
+  position: relative;
 }
-
+.background2{
+  border-style: solid;
+  background-color: rgb(149, 95, 42);		
+  background-position: center;
+  background-repeat: repeat-x;
+  position: relative;
+  padding: 1%;
+  color: black;
+  
+}
 code {
+
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

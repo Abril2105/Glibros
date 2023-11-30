@@ -24,7 +24,7 @@ export default function SignIn() {
       });
   };
   return (
-    <div>
+    <div className={"background2"} style={{ verticalAlign: "middle",textAlign: "center", marginTop: "10%"}}>
       <h1>Welcome to Book Manager!</h1>
       <p>
         Welcome! Here in Book Manager you can to add, search, update and delete
