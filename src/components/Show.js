@@ -66,8 +66,7 @@ const Show = () => {
                   <th>Autor</th>
                   <th>Genero</th>
                   <th>Año de lanzamiento</th>
-                  <th>Disponibilidad</th>
-                  <th></th>
+                  <th>Acciones</th>
                 </tr>
               </thead>
 
@@ -78,7 +77,6 @@ const Show = () => {
                     <td>{libro.autor}</td>
                     <td>{libro.genero}</td>
                     <td>{libro.año}</td>
-                    <td>{libro.disponibilidad ? 'Disponible' : 'No disponible'}</td>
                     <td>
                       <Link to={`/Edit/${libro.id}`} className="btn btn-light">
                         {/* Asegúrate de tener correctamente configurada FontAwesome */}

@@ -8,7 +8,6 @@ const Edit = () => {
   const [autor, setAutor] = useState("");
   const [genero, setGenero] = useState("");
   const [año, setAño] = useState("");
-  const [disponibilidad, setDisponibilidad] = useState(false);
   const navigate = useNavigate();
 
   const { id } = useParams();
@@ -21,7 +20,6 @@ const Edit = () => {
       autor: autor,
       genero: genero,
       año: año,
-      disponibilidad: disponibilidad,
     };
     await updateDoc(libros, data);
     navigate("/home");
@@ -34,7 +32,6 @@ const Edit = () => {
       setAutor((await libros).data().autor);
       setGenero((await libros).data().genero);
       setAño((await libros).data().año);
-      setDisponibilidad((await libros).data().disponibilidad);
     } else {
       console.log("El libro no existe");
     }
@@ -90,18 +87,6 @@ const Edit = () => {
               />
             </div>
 
-            <div className="mb-3">
-              <label className="form-label">Disponibilidad</label>
-              <select
-                value={disponibilidad}
-                onChange={(e) => setDisponibilidad(e.target.value)}
-                type="boolean"
-                className="form-control"
-              >
-                <option value="true">Disponible</option>
-                <option value="false">No disponible</option>
-              </select>
-            </div>
             <button type="submit" className="btn btn-primary">
               Actualizar
             </button>
