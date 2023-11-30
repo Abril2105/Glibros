@@ -8,7 +8,6 @@ const Create = () => {
   const [autor, setAutor] = useState("");
   const [genero, setGenero] = useState("");
   const [año, setAño] = useState("");
-  const [disponibilidad, setDisponibilidad] = useState(false);
   const navigate = useNavigate();
 
   const query = collection(db, "libro");
@@ -20,7 +19,6 @@ const Create = () => {
       autor: autor,
       genero: genero,
       año: año,
-      disponibilidad: disponibilidad,
     });
     navigate("/home");
   };
@@ -71,18 +69,6 @@ const Create = () => {
               />
             </div>
 
-            <div className="mb-3">
-              <label className="form-label">Disponibilidad</label>
-              <select
-                value={disponibilidad}
-                onChange={(e) => setDisponibilidad(e.target.value)}
-                type="boolean"
-                className="form-control"
-              >
-                <option value="true">Disponible</option>
-                <option value="false">No disponible</option>
-              </select>
-            </div>
             <button type="submit" className="btn btn-primary">
               Crear
             </button>
