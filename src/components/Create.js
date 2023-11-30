@@ -25,7 +25,7 @@ const Create = () => {
     navigate("/home");
   };
   return (
-    <div className="container">
+    <div className="container" id="color2">
       <div className="row">
         <div className="col">
           <h1>Crear Libro</h1>

@@ -10,16 +10,21 @@ body {
   background-repeat: repeat;
   background-size: 40%;
   position: relative;
+  background-attachment: fixed;
 }
 .background2{
   border-style: solid;
-  background-color: rgb(149, 95, 42);		
+  background-color: rgb(176, 95, 16);		
   background-position: center;
   background-repeat: repeat-x;
   position: relative;
   padding: 1%;
   color: black;
   
+}
+
+#color2{
+  color: white;
 }
 code {
 

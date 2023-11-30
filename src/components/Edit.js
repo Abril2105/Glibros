@@ -44,7 +44,7 @@ const Edit = () => {
     getLibroById(id);
   }, []);
   return (
-    <div className="container">
+    <div className="container" id="color2">
       <div className="row">
         <div className="col">
           <h1>Actualizar Libro</h1>
